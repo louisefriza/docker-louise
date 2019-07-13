@@ -4,8 +4,6 @@ FROM nginx:1.17.0-alpine
 LABEL maintainer="louise frizarini <louise.friza@gmail.com>"
 #Copiamos o conteudo estatico pro nosso servidor
 COPY ./arquivos /usr/share/nginx/html
-#Copiamos uma configuração pro nginx que servirá para expor nosso site ao msm tempo que faz o proxy
-
 #Expomos a porta 80
 EXPOSE 80
 #Definimos o sinal de stop como o sinal de termino da aplicação
